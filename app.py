@@ -5,7 +5,7 @@ from datetime import datetime
 
 st.set_page_config(page_title="Weather Dashboard", page_icon="🌦️", layout="centered")
 
-st.title(" Weather Dashboard")
+st.title(" Weather App")
 st.caption("weather data — powered by Open-Meteo API")
 
 city = st.text_input("Enter a city name:", "New York")
@@ -42,3 +42,4 @@ if city:
             st.error("Failed to fetch weather data. Try again later.")
     else:
         st.error("City not found. Please check the name.")
+
